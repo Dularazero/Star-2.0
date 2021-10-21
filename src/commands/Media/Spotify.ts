@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ).catch((reason: any) => M.reply(`❌ an error occurred, Reason: ${reason}`))
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        M.reply(await track.getAudio(), MessageType.audio).catch((reason: any) =>
+        M.reply(await track.getAudio(), MessageType.document).catch((reason: any) =>
             M.reply(`❌ an error occurred, Reason: ${reason}`)
         )
     }
