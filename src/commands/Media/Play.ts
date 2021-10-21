@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
         if (!audio.url) return
         M.reply('💫 Sending...')
         this.client
-            .sendMessage(M.from, await audio.getBuffer(), MessageType.document/mp.3, {
+            .sendMessage(M.from, await audio.getBuffer(), MessageType.document/audio, {
                 quoted: M.WAMessage,
                 contextInfo: {
                     externalAdReply: {
